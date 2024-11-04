@@ -1,0 +1,48 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+
+dns:
+  enable: true
+  prefer-h3: true
+  use-hosts: true
+  use-system-hosts: true
+  respect-rules: false
+  listen: 127.0.0.1:1053
+  ipv6: true
+  default-nameserver:
+    - https://223.5.5.5/dns-query
+    - https://1.12.12.12/dns-query
+  nameserver:
+    - system
+  fallback:
+    - https://101.101.101.101/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - tls://8.8.8.8
+    - tls://1.0.0.1
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - 'localhost.ptlogin2.qq.com'
+    - 'dns.msftncsi.com'
+    - 'www.msftncsi.com'
+    - 'www.msftconnecttest.com'
+
+#tun:
+#  enable: true
+#  stack: mixed
+#  dns-hijack:
+#    - "any:53"
+#    - "tcp://any:53"
+#  auto-route: true
+#  auto-redirect: true
+#  auto-detect-interface: true
