@@ -41,7 +41,7 @@ dns:
     - https://dns.nextdns.io
     - https://dns.adguard.com/dns-query
     - https://dns.google/dns-query
-
+    - https://doh.apad.pro/dns-query
 #tun:
 #  enable: true
 #  stack: mixed
