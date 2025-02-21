@@ -18,13 +18,7 @@ dns:
     - tls://1.12.12.12
     - tls://119.29.29.29
   nameserver:
-    - https://dns.quad9.net/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://doh.opendns.com/dns-query
-    - https://dns.nextdns.io
-    - https://dns.adguard.com/dns-query
-    - https://dns.google/dns-query
-    - https://doh.apad.pro/dns-query
+    - system
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
