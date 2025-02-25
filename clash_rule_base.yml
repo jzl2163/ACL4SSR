@@ -4,6 +4,12 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
+unified-delay: true
+global-client-fingerprint: iOS
+
+profile:
+  store-selected: true
+  store-fake-ip: true
 
 dns:
   enable: true
