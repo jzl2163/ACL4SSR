@@ -23,7 +23,9 @@ dns:
     - ntp.*.com
     - +.market.xiaomi.com
   proxy-server-nameserver:
-    - system
+    - tls://223.5.5.5
+    - tls://1.12.12.12
+    - tls://119.29.29.29
   direct-nameserver:
     - system
   direct-nameserver-follow-policy: false
