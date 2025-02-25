@@ -37,13 +37,14 @@ dns:
     - tls://1.12.12.12
     - tls://119.29.29.29
   nameserver:
-    - https://dns.quad9.net/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://208.67.222.222/dns-query #opendns
     - https://doh.apad.pro/dns-query
-    - https://94.140.14.14/dns-query #Adguard 
-    - https://tCbCy9SAWs165E.dns.nextdns.io #nextdns
-    - tls://[2001:4860:4860::8888] #Google DNS
+    - https://dns.quad9.net/dns-query
+    - tls://1dot1dot1dot1.cloudflare-dns.com 
+    - https://208.67.222.222/dns-query #opendns
+    - quic://unfiltered.adguard-dns.com/dns-query #Adguard
+    - quic://297d5b.dns.nextdns.io #Nextdns DoH，DoT被墙
+    - tls://[2001:4860:4860::8888] #Google DNS DoT 其余被墙
+    
 #tun:
 #  enable: true
 #  stack: mixed
