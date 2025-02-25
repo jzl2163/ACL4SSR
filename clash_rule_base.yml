@@ -23,9 +23,7 @@ dns:
     - ntp.*.com
     - +.market.xiaomi.com
   proxy-server-nameserver:
-    - tls://223.5.5.5
-    - tls://1.12.12.12
-    - tls://119.29.29.29
+    - system
   direct-nameserver:
     - system
   direct-nameserver-follow-policy: false
@@ -33,9 +31,9 @@ dns:
     geosite:cn,private:
       - system
   default-nameserver:
-    - tls://223.5.5.5
-    - tls://1.12.12.12
-    - tls://119.29.29.29
+    - quic://223.5.5.5 #Ali
+    - tls://1.12.12.12 #DNSPOD
+    - tls://123.125.81.6 #360 DNS 北京节点 
   nameserver:
     - https://doh.apad.pro/dns-query
     - https://dns.quad9.net/dns-query
