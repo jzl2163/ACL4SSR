@@ -4,6 +4,7 @@
     - https://doh.apad.pro/dns-query
     - https://94.140.14.14/dns-query #Adguard 
     - 'https://45.90.28.0/#skip-cert-verify=true' #nextdns
+    - tls://[2001:4860:4860::8888] #Google DNS
 
 无法使用：
     - https://dns.nextdns.io
