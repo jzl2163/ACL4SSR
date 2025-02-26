@@ -5,7 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 unified-delay: true
-global-client-fingerprint: iOS
+global-client-fingerprint: ios
 
 profile:
   store-selected: true
