@@ -2,7 +2,7 @@
     - tls://1.0.0.1 #cloudlare
     - tls://208.67.222.222 #opendns
     - https://doh.apad.pro/dns-query
-    - quic://94.140.14.140/dns-query #Adguard
+    - quic://94.140.14.140 #Adguard
     - quic://297d5b.dns.nextdns.io #Nextdns DoH，DoT被墙
     - tls://[2001:4860:4860::8888] #Google DNS DoT 其余被墙
 
