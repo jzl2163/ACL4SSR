@@ -44,7 +44,7 @@ dns:
     - tls://123.125.81.6 #360 DNS 北京节点 
   nameserver:
     - https://doh.apad.pro/dns-query
-    - tls://9.9.9.9 #quad9
+    - tls://9.9.9.11 #quad9 ECS
     - tls://1.0.0.1 #cloudflare
     - tls://208.67.222.222 #opendns
     - quic://94.140.14.140 #Adguard
