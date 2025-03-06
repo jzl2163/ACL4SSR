@@ -1,15 +1,16 @@
-    - tls://9.9.9.11 # quad9 ECS
-    - tls://1.0.0.1 #cloudlare
-    - tls://208.67.222.222 #opendns 普通版
-    - https://doh.apad.pro/dns-query
-    - quic://94.140.14.140 #Adguard 无过滤
-    - quic://297d5b.dns.nextdns.io #Nextdns DoH，DoT被墙
-    - tls://[2001:4860:4860::8888] #Google DNS DoT 其余被墙
+    - tls://1dot1dot1dot1.cloudflare-dns.com  #cloudlare
+    - tls://7529dad7.d.adguard-dns.com #Adguard 子域名DoT可用，其余不可用
+    - quic://297d5b.dns.nextdns.io #Nextdns子域名可用 其DoH，DoT被墙
+
 
 无法使用：
     - https://dns.nextdns.io
     - https://dns.adguard.com/dns-query
     - https://dns.google/dns-query
+    - https://doh.apad.pro/dns-query #停止服务
+    - tls://[2001:4860:4860::8888] #Google DNS 被阻断
+    - tls://208.67.222.222 #opendns 普通版 已被阻断
+    - tls://9.9.9.11 # quad9 ECS 已被阻断
 
 不推荐：
     - https://101.101.101.101/dns-query #TWNIC-DNS_无ECS
@@ -24,3 +25,13 @@
     - quic://unfiltered.adguard-dns.com/dns-query #Adguard
     - tls://1dot1dot1dot1.cloudflare-dns.com
     - tls://9.9.9.9 #quad9 无ECS
+
+
+25/3/4以前的配置：
+    - https://doh.apad.pro/dns-query
+    - tls://9.9.9.11 #quad9 ECS
+    - tls://1.0.0.1 #cloudflare
+    - tls://208.67.222.222 #opendns
+    - quic://94.140.14.140 #Adguard
+    - quic://297d5b.dns.nextdns.io #Nextdns DoH，DoT被墙
+    - tls://[2001:4860:4860::8888] #Google DNS DoT 其余被墙
