@@ -46,6 +46,9 @@ dns:
     - tls://1dot1dot1dot1.cloudflare-dns.com  #cloudlare
     - tls://7529dad7.d.adguard-dns.com #Adguard 子域名DoT可用，其余不可用
     - quic://297d5b.dns.nextdns.io #Nextdns子域名可用 其DoH，DoT被墙
+    - https://dns.cloudflare.com/dns-query
+    - https://208.67.222.222/dns-query
+    - tls://208.67.222.222
     
 #tun:
 #  enable: true
